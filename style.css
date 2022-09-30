@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(209, 170, 119);
+    /* background-image: url('../img/microphone-g6dfa7d809_1920.jpg'); */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    padding: 0px 12px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.brand img{
+    /* height: ; */
+    width: 60px;
+    padding: 0px 8px;
+}
+.container{
+    height: 60vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 20px;
+    /* background-image: url(../img/microphone-g6dfa7d809_1920.jpg); */
+    background-image: url(./microphone-g6dfa7d809_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.song-item{
+    display: flex;
+    background-color: white;
+    /* width: 100%; */
+    color: black;
+    margin: 12px 0px;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 23px;
+}
+.songlistplay i{
+    cursor: pointer;
+}
+
+.timestamp{
+    margin: 0px 20px;
+}
+
+.song-item span{
+    margin: 0px 8px;
+}
+.song-item img{
+    height: 50px;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   flex-direction: column;
+}
+
+.songinfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songinfo img{ 
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.icons{
+    margin-top: 20px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: 10px;
+    font-size: 17px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and(max-width: 600px){
+    .icons {
+        margin-top: 66px;
+    }
+}
